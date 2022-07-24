@@ -1,0 +1,38 @@
+<style>
+  .container > div{
+  height:100vh;
+  background: pink;
+}
+#up{
+  background: white;
+  height:30px;
+  width:30px;
+  padding:10px;
+  position:fixed;
+  bottom:30px;
+  right:20px;
+}
+</style>
+
+<div id="up">☝️up </div>
+<div class="container">
+  <div>Div 1 scroll down to see in action</div>
+  <div>Div 2</div>
+  <div>Div 3</div>
+</div>
+
+
+<script>
+
+let up =  document.querySelector('#up');
+
+up.addEventListener('click',()=>{
+  window.scroll({
+   top: 0, 
+   behavior: 'smooth' 
+  });
+})
+
+
+  
+</script>
